@@ -1,8 +1,20 @@
 {
   "permissions": {
     "allow": [
+      "mcp__playwright",
       "Bash(npx vitest:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm list:*)",
+      "Bash(grep:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(git stash:*)",
+      "Bash(npm info:*)",
+      "Bash(python3 -c \"import sys,json; vs=[v for v in json.load\\(sys.stdin\\) if v.startswith\\(''''4.''''\\) or v.startswith\\(''''5.''''\\)]; print\\(vs[-5:]\\)\")",
+      "Bash(python3 -c \"import sys,json; vs=json.load\\(sys.stdin\\); print\\([v for v in vs if v.startswith\\(''''4.''''\\)][-5:]\\)\")",
+      "mcp__ide__getDiagnostics"
     ]
   }
 }
