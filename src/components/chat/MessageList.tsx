@@ -25,8 +25,8 @@ export function MessageList({ messages, isLoading }: MessageListProps) {
           >
             {message.role === "assistant" && (
               <div className="flex-shrink-0">
-                <div className="w-9 h-9 rounded-lg bg-white border border-neutral-200 shadow-sm flex items-center justify-center">
-                  <Bot className="h-4.5 w-4.5 text-neutral-700" />
+                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 shadow-md flex items-center justify-center ring-2 ring-white">
+                  <Bot className="h-4 w-4 text-white" />
                 </div>
               </div>
             )}
@@ -108,8 +108,8 @@ export function MessageList({ messages, isLoading }: MessageListProps) {
             
             {message.role === "user" && (
               <div className="flex-shrink-0">
-                <div className="w-9 h-9 rounded-lg bg-blue-600 shadow-sm flex items-center justify-center">
-                  <User className="h-4.5 w-4.5 text-white" />
+                <div className="w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 shadow-md flex items-center justify-center ring-2 ring-white">
+                  <User className="h-4 w-4 text-white" />
                 </div>
               </div>
             )}
